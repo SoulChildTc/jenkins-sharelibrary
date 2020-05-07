@@ -24,6 +24,9 @@ pipeline {
                     script {
                         println('获取代码')
                         tools.Myprint('获取代码','green')
+                        ansiColor('xterm') {
+                            println("\033[40;31m 获取代码 \033[0m")
+                        }
                     }
                 }
             }
