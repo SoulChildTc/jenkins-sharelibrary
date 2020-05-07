@@ -1,7 +1,7 @@
 #!groovy
 @Library('jenkins-sharelibrary') _
 
-def tools = new src.org.devops.tools()
+def tools = new org.devops.tools()
 
 String workspace = "/data/jenkins"
 pipeline {
