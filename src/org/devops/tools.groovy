@@ -14,6 +14,6 @@ def Myprint(content,color) {
     'green1': "\033[40;32m ${content} \033[0m"
   ]
   ansiColor('xterm') {
-    print(colors[${color}])
+    println(colors[${color}])
   }
 }
