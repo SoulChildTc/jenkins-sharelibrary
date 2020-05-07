@@ -23,6 +23,7 @@ pipeline {
                 timeout(time: 5, unit: 'MINUTES'){ //步骤超时时间
                     script {
                         println('获取代码')
+                        tools.Myprint('获取代码','green')
                     }
                 }
             }
@@ -33,6 +34,7 @@ pipeline {
                 timeout(time: 5, unit: 'MINUTES'){
                     script {
                         println('应用编译打包')
+                        tools.Myprint('应用编译打包','green1')
                     }
                 }
             }
@@ -43,7 +45,7 @@ pipeline {
                 timeout(time: 10, unit: 'MINUTES'){
                     script {
                         println('代码扫描')
-                        tools.PrintMes("hello, my is sharelibrary!")
+                        tools.Myprint('代码扫描','green1')
                     }
                 }
             }
@@ -59,6 +61,7 @@ pipeline {
         success {
             script {
                 currentBuild.description = "构建成功"
+                tools.Myprint('构建成功','green1')
             }
         }
         failure {
