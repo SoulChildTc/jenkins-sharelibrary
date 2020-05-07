@@ -1,4 +1,5 @@
-@Libary('jenkins-sharelibary') _
+#!groovy
+@Library('jenkins-sharelibrary') _
 
 def tools = new src.org.tools()
 
