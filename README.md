@@ -1,2 +1,2 @@
-# jenkins-sharelibary
-Jenkins ShareLibary
+# jenkins-sharelibrary
+Jenkins ShareLibrary
