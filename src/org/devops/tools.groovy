@@ -19,7 +19,7 @@ def Myprint(content,color) {
 }
 
 // 构建类型
-def build(buildType,buildShell,){
+def build(buildType,buildShell){
   def buildTools = ['mvn': 'M2', 'npm':'NPM']
 
   println("当前选择的构建类型为:${buildType}")
